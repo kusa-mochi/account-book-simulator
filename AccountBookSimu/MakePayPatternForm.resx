@@ -1,0 +1,2487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_Name.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 15</value>
+  </data>
+  <data name="label_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 18</value>
+  </data>
+  <data name="label_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_Name.Text" xml:space="preserve">
+    <value>表示名</value>
+  </data>
+  <data name="&gt;&gt;label_Name.Name" xml:space="preserve">
+    <value>label_Name</value>
+  </data>
+  <data name="&gt;&gt;label_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Name.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_Name.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="textBox_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 12</value>
+  </data>
+  <data name="textBox_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 25</value>
+  </data>
+  <data name="textBox_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox_Name.Name" xml:space="preserve">
+    <value>textBox_Name</value>
+  </data>
+  <data name="&gt;&gt;textBox_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_Name.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_Name.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="numericUpDown_Amount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 99</value>
+  </data>
+  <data name="numericUpDown_Amount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 25</value>
+  </data>
+  <data name="numericUpDown_Amount.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="numericUpDown_Amount.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_Amount.Name" xml:space="preserve">
+    <value>numericUpDown_Amount</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_Amount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_Amount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_Amount.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_InOrPay.Items" xml:space="preserve">
+    <value>支出</value>
+  </data>
+  <data name="comboBox_InOrPay.Items1" xml:space="preserve">
+    <value>収入</value>
+  </data>
+  <data name="comboBox_InOrPay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>686, 96</value>
+  </data>
+  <data name="comboBox_InOrPay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 26</value>
+  </data>
+  <data name="comboBox_InOrPay.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;comboBox_InOrPay.Name" xml:space="preserve">
+    <value>comboBox_InOrPay</value>
+  </data>
+  <data name="&gt;&gt;comboBox_InOrPay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_InOrPay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_InOrPay.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="checkBox_Term.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_Term.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 280</value>
+  </data>
+  <data name="checkBox_Term.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="checkBox_Term.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;checkBox_Term.Name" xml:space="preserve">
+    <value>checkBox_Term</value>
+  </data>
+  <data name="&gt;&gt;checkBox_Term.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_Term.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox_Term.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="checkBox_IncreaseDecrease.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_IncreaseDecrease.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 370</value>
+  </data>
+  <data name="checkBox_IncreaseDecrease.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="checkBox_IncreaseDecrease.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;checkBox_IncreaseDecrease.Name" xml:space="preserve">
+    <value>checkBox_IncreaseDecrease</value>
+  </data>
+  <data name="&gt;&gt;checkBox_IncreaseDecrease.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_IncreaseDecrease.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox_IncreaseDecrease.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="dateTimePicker_Term_From.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="dateTimePicker_Term_From.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 25</value>
+  </data>
+  <data name="dateTimePicker_Term_From.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_Term_From.Name" xml:space="preserve">
+    <value>dateTimePicker_Term_From</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_Term_From.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_Term_From.Parent" xml:space="preserve">
+    <value>groupBox_Term</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_Term_From.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dateTimePicker_Term_To.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 24</value>
+  </data>
+  <data name="dateTimePicker_Term_To.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 25</value>
+  </data>
+  <data name="dateTimePicker_Term_To.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_Term_To.Name" xml:space="preserve">
+    <value>dateTimePicker_Term_To</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_Term_To.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_Term_To.Parent" xml:space="preserve">
+    <value>groupBox_Term</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_Term_To.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_Term_FromTo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_Term_FromTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 29</value>
+  </data>
+  <data name="label_Term_FromTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 18</value>
+  </data>
+  <data name="label_Term_FromTo.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label_Term_FromTo.Text" xml:space="preserve">
+    <value>～</value>
+  </data>
+  <data name="&gt;&gt;label_Term_FromTo.Name" xml:space="preserve">
+    <value>label_Term_FromTo</value>
+  </data>
+  <data name="&gt;&gt;label_Term_FromTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Term_FromTo.Parent" xml:space="preserve">
+    <value>groupBox_Term</value>
+  </data>
+  <data name="&gt;&gt;label_Term_FromTo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox_Term.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="groupBox_Term.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 280</value>
+  </data>
+  <data name="groupBox_Term.Size" type="System.Drawing.Size, System.Drawing">
+    <value>649, 66</value>
+  </data>
+  <data name="groupBox_Term.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="groupBox_Term.Text" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Term.Name" xml:space="preserve">
+    <value>groupBox_Term</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Term.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Term.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Term.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items6" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items7" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items8" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items9" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items10" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items11" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items12" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items13" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items14" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items15" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items16" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items17" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items18" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items19" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items20" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items21" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items22" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items23" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items24" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items25" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items26" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items27" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items28" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items29" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Items30" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 144</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 26</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Day.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_MonthAndDay_Day.Name" xml:space="preserve">
+    <value>comboBox_IncreaseDecrease_MonthAndDay_Day</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_MonthAndDay_Day.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_MonthAndDay_Day.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_MonthAndDay_Day.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Weekday.Items" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Weekday.Items1" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Weekday.Items2" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Weekday.Items3" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Weekday.Items4" xml:space="preserve">
+    <value>木</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Weekday.Items5" xml:space="preserve">
+    <value>金</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Weekday.Items6" xml:space="preserve">
+    <value>土</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Weekday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 22</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Weekday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 26</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Weekday.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Weekday.Name" xml:space="preserve">
+    <value>comboBox_IncreaseDecrease_Weekday</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Weekday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Weekday.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Weekday.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_IncreaseDecrease_Weekday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_IncreaseDecrease_Weekday.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_IncreaseDecrease_Weekday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 25</value>
+  </data>
+  <data name="label_IncreaseDecrease_Weekday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="label_IncreaseDecrease_Weekday.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="label_IncreaseDecrease_Weekday.Text" xml:space="preserve">
+    <value>曜日</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Weekday.Name" xml:space="preserve">
+    <value>label_IncreaseDecrease_Weekday</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Weekday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Weekday.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Weekday.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_DateTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_DateTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_DateTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 176</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_DateTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 20</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_DateTime.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_DateTime.Name" xml:space="preserve">
+    <value>radioButton_IncreaseDecrease_DateTime</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_DateTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_DateTime.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_DateTime.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items6" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items7" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items8" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items9" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items10" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items11" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items12" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items13" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items14" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items15" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items16" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items17" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items18" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items19" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items20" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items21" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items22" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items23" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items24" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items25" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items26" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items27" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items28" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items29" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Items30" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 52</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 26</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Day.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Day.Name" xml:space="preserve">
+    <value>comboBox_IncreaseDecrease_Day</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Day.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Day.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Day.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="dateTimePicker_IncreaseDecrease_DateTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 176</value>
+  </data>
+  <data name="dateTimePicker_IncreaseDecrease_DateTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 25</value>
+  </data>
+  <data name="dateTimePicker_IncreaseDecrease_DateTime.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_IncreaseDecrease_DateTime.Name" xml:space="preserve">
+    <value>dateTimePicker_IncreaseDecrease_DateTime</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_IncreaseDecrease_DateTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_IncreaseDecrease_DateTime.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_IncreaseDecrease_DateTime.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label_IncreaseDecrease_Day.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_IncreaseDecrease_Day.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_IncreaseDecrease_Day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 55</value>
+  </data>
+  <data name="label_IncreaseDecrease_Day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 18</value>
+  </data>
+  <data name="label_IncreaseDecrease_Day.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="label_IncreaseDecrease_Day.Text" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Day.Name" xml:space="preserve">
+    <value>label_IncreaseDecrease_Day</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Day.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Day.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Day.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Day.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Day.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 147</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 18</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Day.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Day.Text" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_MonthAndDay_Day.Name" xml:space="preserve">
+    <value>label_IncreaseDecrease_MonthAndDay_Day</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_MonthAndDay_Day.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_MonthAndDay_Day.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_MonthAndDay_Day.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Number.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Number.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Number.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 85</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Number.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 18</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Number.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Number.Text" xml:space="preserve">
+    <value>第</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Ordinal_Number.Name" xml:space="preserve">
+    <value>label_IncreaseDecrease_Ordinal_Number</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Ordinal_Number.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Ordinal_Number.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Ordinal_Number.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Month.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Month.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Month.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 147</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Month.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 18</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Month.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="label_IncreaseDecrease_MonthAndDay_Month.Text" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_MonthAndDay_Month.Name" xml:space="preserve">
+    <value>label_IncreaseDecrease_MonthAndDay_Month</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_MonthAndDay_Month.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_MonthAndDay_Month.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_MonthAndDay_Month.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Number.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Number.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Number.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Number.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Number.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Number.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 82</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Number.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 26</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Number.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Ordinal_Number.Name" xml:space="preserve">
+    <value>comboBox_IncreaseDecrease_Ordinal_Number</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Ordinal_Number.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Ordinal_Number.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Ordinal_Number.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Weekday.Items" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Weekday.Items1" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Weekday.Items2" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Weekday.Items3" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Weekday.Items4" xml:space="preserve">
+    <value>木</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Weekday.Items5" xml:space="preserve">
+    <value>金</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Weekday.Items6" xml:space="preserve">
+    <value>土</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Weekday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 82</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Weekday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 26</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_Ordinal_Weekday.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Ordinal_Weekday.Name" xml:space="preserve">
+    <value>comboBox_IncreaseDecrease_Ordinal_Weekday</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Ordinal_Weekday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Ordinal_Weekday.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_Ordinal_Weekday.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items6" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items7" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items8" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items9" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items10" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Items11" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 144</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 26</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_MonthAndDay_Month.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_MonthAndDay_Month.Name" xml:space="preserve">
+    <value>comboBox_IncreaseDecrease_MonthAndDay_Month</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_MonthAndDay_Month.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_MonthAndDay_Month.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_MonthAndDay_Month.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Weekday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Weekday.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Weekday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 85</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Weekday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Weekday.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="label_IncreaseDecrease_Ordinal_Weekday.Text" xml:space="preserve">
+    <value>曜日</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Ordinal_Weekday.Name" xml:space="preserve">
+    <value>label_IncreaseDecrease_Ordinal_Weekday</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Ordinal_Weekday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Ordinal_Weekday.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_Ordinal_Weekday.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_MonthAndDay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_MonthAndDay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_MonthAndDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 146</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_MonthAndDay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 20</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_MonthAndDay.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_MonthAndDay.Name" xml:space="preserve">
+    <value>radioButton_IncreaseDecrease_MonthAndDay</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_MonthAndDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_MonthAndDay.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_MonthAndDay.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Weekday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Weekday.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Weekday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Weekday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 20</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Weekday.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Weekday.Name" xml:space="preserve">
+    <value>radioButton_IncreaseDecrease_Weekday</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Weekday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Weekday.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Weekday.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_MonthEnd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_MonthEnd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_MonthEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 114</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_MonthEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 22</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_MonthEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_MonthEnd.Text" xml:space="preserve">
+    <value>末日</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_MonthEnd.Name" xml:space="preserve">
+    <value>radioButton_IncreaseDecrease_MonthEnd</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_MonthEnd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_MonthEnd.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_MonthEnd.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Day.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Day.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 54</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 20</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Day.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Day.Name" xml:space="preserve">
+    <value>radioButton_IncreaseDecrease_Day</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Day.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Day.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Day.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Ordinal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Ordinal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Ordinal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 84</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Ordinal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 20</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Ordinal.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Ordinal.Name" xml:space="preserve">
+    <value>radioButton_IncreaseDecrease_Ordinal</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Ordinal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Ordinal.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Ordinal.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="groupBox_IncreaseDecrease_Step2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 24</value>
+  </data>
+  <data name="groupBox_IncreaseDecrease_Step2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>299, 222</value>
+  </data>
+  <data name="groupBox_IncreaseDecrease_Step2.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease_Step2.Name" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step2</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease_Step2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease_Step2.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease_Step2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Daily.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Daily.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Daily.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Daily.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 22</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Daily.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Daily.Text" xml:space="preserve">
+    <value>毎日</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Daily.Name" xml:space="preserve">
+    <value>radioButton_IncreaseDecrease_Daily</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Daily.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Daily.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Daily.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Weekly.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Weekly.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Weekly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 52</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Weekly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 22</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Weekly.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Weekly.Text" xml:space="preserve">
+    <value>毎週</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Weekly.Name" xml:space="preserve">
+    <value>radioButton_IncreaseDecrease_Weekly</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Weekly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Weekly.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Weekly.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Monthly.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Monthly.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Monthly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 80</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Monthly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 22</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Monthly.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Monthly.Text" xml:space="preserve">
+    <value>毎月</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Monthly.Name" xml:space="preserve">
+    <value>radioButton_IncreaseDecrease_Monthly</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Monthly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Monthly.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Monthly.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Yearly.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Yearly.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Yearly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 108</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Yearly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 22</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Yearly.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_Yearly.Text" xml:space="preserve">
+    <value>毎年</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Yearly.Name" xml:space="preserve">
+    <value>radioButton_IncreaseDecrease_Yearly</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Yearly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Yearly.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_Yearly.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_OnlyOnce.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_OnlyOnce.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_OnlyOnce.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 136</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_OnlyOnce.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_OnlyOnce.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="radioButton_IncreaseDecrease_OnlyOnce.Text" xml:space="preserve">
+    <value>一度だけ</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_OnlyOnce.Name" xml:space="preserve">
+    <value>radioButton_IncreaseDecrease_OnlyOnce</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_OnlyOnce.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_OnlyOnce.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_IncreaseDecrease_OnlyOnce.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBox_IncreaseDecrease_Step1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 24</value>
+  </data>
+  <data name="groupBox_IncreaseDecrease_Step1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 170</value>
+  </data>
+  <data name="groupBox_IncreaseDecrease_Step1.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease_Step1.Name" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease_Step1</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease_Step1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease_Step1.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease_Step1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="numericUpDown_IncreaseDecrease_Amount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 79</value>
+  </data>
+  <data name="numericUpDown_IncreaseDecrease_Amount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 25</value>
+  </data>
+  <data name="numericUpDown_IncreaseDecrease_Amount.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="numericUpDown_IncreaseDecrease_Amount.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_IncreaseDecrease_Amount.Name" xml:space="preserve">
+    <value>numericUpDown_IncreaseDecrease_Amount</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_IncreaseDecrease_Amount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_IncreaseDecrease_Amount.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown_IncreaseDecrease_Amount.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_IncreaseDecrease_YenOf.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_IncreaseDecrease_YenOf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_IncreaseDecrease_YenOf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 81</value>
+  </data>
+  <data name="label_IncreaseDecrease_YenOf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="label_IncreaseDecrease_YenOf.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="label_IncreaseDecrease_YenOf.Text" xml:space="preserve">
+    <value>円の</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_YenOf.Name" xml:space="preserve">
+    <value>label_IncreaseDecrease_YenOf</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_YenOf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_YenOf.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease</value>
+  </data>
+  <data name="&gt;&gt;label_IncreaseDecrease_YenOf.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_InOrDe.Items" xml:space="preserve">
+    <value>増額</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_InOrDe.Items1" xml:space="preserve">
+    <value>減額</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_InOrDe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>683, 78</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_InOrDe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 26</value>
+  </data>
+  <data name="comboBox_IncreaseDecrease_InOrDe.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_InOrDe.Name" xml:space="preserve">
+    <value>comboBox_IncreaseDecrease_InOrDe</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_InOrDe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_InOrDe.Parent" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease</value>
+  </data>
+  <data name="&gt;&gt;comboBox_IncreaseDecrease_InOrDe.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBox_IncreaseDecrease.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="groupBox_IncreaseDecrease.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 370</value>
+  </data>
+  <data name="groupBox_IncreaseDecrease.Size" type="System.Drawing.Size, System.Drawing">
+    <value>795, 266</value>
+  </data>
+  <data name="groupBox_IncreaseDecrease.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="groupBox_IncreaseDecrease.Text" xml:space="preserve">
+    <value>金額の増減</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease.Name" xml:space="preserve">
+    <value>groupBox_IncreaseDecrease</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IncreaseDecrease.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button_OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>589, 648</value>
+  </data>
+  <data name="button_OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 30</value>
+  </data>
+  <data name="button_OK.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="button_OK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;button_OK.Name" xml:space="preserve">
+    <value>button_OK</value>
+  </data>
+  <data name="&gt;&gt;button_OK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_OK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_OK.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button_Cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>695, 648</value>
+  </data>
+  <data name="button_Cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 30</value>
+  </data>
+  <data name="button_Cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="button_Cancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="&gt;&gt;button_Cancel.Name" xml:space="preserve">
+    <value>button_Cancel</value>
+  </data>
+  <data name="&gt;&gt;button_Cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_Cancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_Cancel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_YenOf.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_YenOf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_YenOf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>639, 101</value>
+  </data>
+  <data name="label_YenOf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="label_YenOf.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label_YenOf.Text" xml:space="preserve">
+    <value>円の</value>
+  </data>
+  <data name="&gt;&gt;label_YenOf.Name" xml:space="preserve">
+    <value>label_YenOf</value>
+  </data>
+  <data name="&gt;&gt;label_YenOf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_YenOf.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_YenOf.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radioButton_Daily.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_Daily.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="radioButton_Daily.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 22</value>
+  </data>
+  <data name="radioButton_Daily.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="radioButton_Daily.Text" xml:space="preserve">
+    <value>毎日</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Daily.Name" xml:space="preserve">
+    <value>radioButton_Daily</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Daily.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Daily.Parent" xml:space="preserve">
+    <value>groupBox_Step1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Daily.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButton_Weekly.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_Weekly.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_Weekly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 52</value>
+  </data>
+  <data name="radioButton_Weekly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 22</value>
+  </data>
+  <data name="radioButton_Weekly.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="radioButton_Weekly.Text" xml:space="preserve">
+    <value>毎週</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Weekly.Name" xml:space="preserve">
+    <value>radioButton_Weekly</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Weekly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Weekly.Parent" xml:space="preserve">
+    <value>groupBox_Step1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Weekly.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioButton_Monthly.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_Monthly.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_Monthly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 80</value>
+  </data>
+  <data name="radioButton_Monthly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 22</value>
+  </data>
+  <data name="radioButton_Monthly.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="radioButton_Monthly.Text" xml:space="preserve">
+    <value>毎月</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Monthly.Name" xml:space="preserve">
+    <value>radioButton_Monthly</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Monthly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Monthly.Parent" xml:space="preserve">
+    <value>groupBox_Step1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Monthly.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radioButton_Yearly.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_Yearly.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_Yearly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 108</value>
+  </data>
+  <data name="radioButton_Yearly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 22</value>
+  </data>
+  <data name="radioButton_Yearly.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="radioButton_Yearly.Text" xml:space="preserve">
+    <value>毎年</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Yearly.Name" xml:space="preserve">
+    <value>radioButton_Yearly</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Yearly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Yearly.Parent" xml:space="preserve">
+    <value>groupBox_Step1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Yearly.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="radioButton_OnlyOnce.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_OnlyOnce.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_OnlyOnce.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 136</value>
+  </data>
+  <data name="radioButton_OnlyOnce.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="radioButton_OnlyOnce.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="radioButton_OnlyOnce.Text" xml:space="preserve">
+    <value>一度だけ</value>
+  </data>
+  <data name="&gt;&gt;radioButton_OnlyOnce.Name" xml:space="preserve">
+    <value>radioButton_OnlyOnce</value>
+  </data>
+  <data name="&gt;&gt;radioButton_OnlyOnce.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_OnlyOnce.Parent" xml:space="preserve">
+    <value>groupBox_Step1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_OnlyOnce.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox_Weekday.Items" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="comboBox_Weekday.Items1" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="comboBox_Weekday.Items2" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="comboBox_Weekday.Items3" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="comboBox_Weekday.Items4" xml:space="preserve">
+    <value>木</value>
+  </data>
+  <data name="comboBox_Weekday.Items5" xml:space="preserve">
+    <value>金</value>
+  </data>
+  <data name="comboBox_Weekday.Items6" xml:space="preserve">
+    <value>土</value>
+  </data>
+  <data name="comboBox_Weekday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 22</value>
+  </data>
+  <data name="comboBox_Weekday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 26</value>
+  </data>
+  <data name="comboBox_Weekday.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Weekday.Name" xml:space="preserve">
+    <value>comboBox_Weekday</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Weekday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Weekday.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Weekday.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_Weekday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_Weekday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 25</value>
+  </data>
+  <data name="label_Weekday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="label_Weekday.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="label_Weekday.Text" xml:space="preserve">
+    <value>曜日</value>
+  </data>
+  <data name="&gt;&gt;label_Weekday.Name" xml:space="preserve">
+    <value>label_Weekday</value>
+  </data>
+  <data name="&gt;&gt;label_Weekday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Weekday.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_Weekday.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_Day.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_Day.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_Day.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_Day.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox_Day.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_Day.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBox_Day.Items6" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBox_Day.Items7" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBox_Day.Items8" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="comboBox_Day.Items9" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox_Day.Items10" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="comboBox_Day.Items11" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="comboBox_Day.Items12" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="comboBox_Day.Items13" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="comboBox_Day.Items14" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="comboBox_Day.Items15" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="comboBox_Day.Items16" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="comboBox_Day.Items17" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="comboBox_Day.Items18" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="comboBox_Day.Items19" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="comboBox_Day.Items20" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="comboBox_Day.Items21" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="comboBox_Day.Items22" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="comboBox_Day.Items23" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="comboBox_Day.Items24" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="comboBox_Day.Items25" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="comboBox_Day.Items26" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="comboBox_Day.Items27" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="comboBox_Day.Items28" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="comboBox_Day.Items29" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="comboBox_Day.Items30" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="comboBox_Day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 52</value>
+  </data>
+  <data name="comboBox_Day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 26</value>
+  </data>
+  <data name="comboBox_Day.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Day.Name" xml:space="preserve">
+    <value>comboBox_Day</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Day.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Day.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Day.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_Day.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_Day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 55</value>
+  </data>
+  <data name="label_Day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 18</value>
+  </data>
+  <data name="label_Day.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="label_Day.Text" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="&gt;&gt;label_Day.Name" xml:space="preserve">
+    <value>label_Day</value>
+  </data>
+  <data name="&gt;&gt;label_Day.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Day.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_Day.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label_Ordinal_Number.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_Ordinal_Number.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_Ordinal_Number.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 85</value>
+  </data>
+  <data name="label_Ordinal_Number.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 18</value>
+  </data>
+  <data name="label_Ordinal_Number.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="label_Ordinal_Number.Text" xml:space="preserve">
+    <value>第</value>
+  </data>
+  <data name="&gt;&gt;label_Ordinal_Number.Name" xml:space="preserve">
+    <value>label_Ordinal_Number</value>
+  </data>
+  <data name="&gt;&gt;label_Ordinal_Number.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Ordinal_Number.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_Ordinal_Number.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBox_Ordinal_Number.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_Ordinal_Number.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_Ordinal_Number.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_Ordinal_Number.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox_Ordinal_Number.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_Ordinal_Number.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 82</value>
+  </data>
+  <data name="comboBox_Ordinal_Number.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 26</value>
+  </data>
+  <data name="comboBox_Ordinal_Number.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Ordinal_Number.Name" xml:space="preserve">
+    <value>comboBox_Ordinal_Number</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Ordinal_Number.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Ordinal_Number.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Ordinal_Number.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label_Ordinal_Weekday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_Ordinal_Weekday.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_Ordinal_Weekday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 85</value>
+  </data>
+  <data name="label_Ordinal_Weekday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="label_Ordinal_Weekday.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="label_Ordinal_Weekday.Text" xml:space="preserve">
+    <value>曜日</value>
+  </data>
+  <data name="&gt;&gt;label_Ordinal_Weekday.Name" xml:space="preserve">
+    <value>label_Ordinal_Weekday</value>
+  </data>
+  <data name="&gt;&gt;label_Ordinal_Weekday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Ordinal_Weekday.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_Ordinal_Weekday.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="comboBox_Ordinal_Weekday.Items" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="comboBox_Ordinal_Weekday.Items1" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="comboBox_Ordinal_Weekday.Items2" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="comboBox_Ordinal_Weekday.Items3" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="comboBox_Ordinal_Weekday.Items4" xml:space="preserve">
+    <value>木</value>
+  </data>
+  <data name="comboBox_Ordinal_Weekday.Items5" xml:space="preserve">
+    <value>金</value>
+  </data>
+  <data name="comboBox_Ordinal_Weekday.Items6" xml:space="preserve">
+    <value>土</value>
+  </data>
+  <data name="comboBox_Ordinal_Weekday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 82</value>
+  </data>
+  <data name="comboBox_Ordinal_Weekday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 26</value>
+  </data>
+  <data name="comboBox_Ordinal_Weekday.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Ordinal_Weekday.Name" xml:space="preserve">
+    <value>comboBox_Ordinal_Weekday</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Ordinal_Weekday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Ordinal_Weekday.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Ordinal_Weekday.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="radioButton_Weekday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_Weekday.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_Weekday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="radioButton_Weekday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 20</value>
+  </data>
+  <data name="radioButton_Weekday.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Weekday.Name" xml:space="preserve">
+    <value>radioButton_Weekday</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Weekday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Weekday.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Weekday.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="radioButton_Day.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_Day.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_Day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 54</value>
+  </data>
+  <data name="radioButton_Day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 20</value>
+  </data>
+  <data name="radioButton_Day.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Day.Name" xml:space="preserve">
+    <value>radioButton_Day</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Day.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Day.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Day.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="radioButton_Ordinal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_Ordinal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_Ordinal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 84</value>
+  </data>
+  <data name="radioButton_Ordinal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 20</value>
+  </data>
+  <data name="radioButton_Ordinal.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Ordinal.Name" xml:space="preserve">
+    <value>radioButton_Ordinal</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Ordinal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Ordinal.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_Ordinal.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="radioButton_MonthEnd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_MonthEnd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_MonthEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 114</value>
+  </data>
+  <data name="radioButton_MonthEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 22</value>
+  </data>
+  <data name="radioButton_MonthEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="radioButton_MonthEnd.Text" xml:space="preserve">
+    <value>末日</value>
+  </data>
+  <data name="&gt;&gt;radioButton_MonthEnd.Name" xml:space="preserve">
+    <value>radioButton_MonthEnd</value>
+  </data>
+  <data name="&gt;&gt;radioButton_MonthEnd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_MonthEnd.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_MonthEnd.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="radioButton_MonthAndDay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_MonthAndDay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_MonthAndDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 146</value>
+  </data>
+  <data name="radioButton_MonthAndDay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 20</value>
+  </data>
+  <data name="radioButton_MonthAndDay.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;radioButton_MonthAndDay.Name" xml:space="preserve">
+    <value>radioButton_MonthAndDay</value>
+  </data>
+  <data name="&gt;&gt;radioButton_MonthAndDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_MonthAndDay.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_MonthAndDay.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items6" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items7" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items8" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items9" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items10" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Items11" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 144</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 26</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Month.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;comboBox_MonthAndDay_Month.Name" xml:space="preserve">
+    <value>comboBox_MonthAndDay_Month</value>
+  </data>
+  <data name="&gt;&gt;comboBox_MonthAndDay_Month.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_MonthAndDay_Month.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_MonthAndDay_Month.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label_MonthAndDay_Month.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_MonthAndDay_Month.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_MonthAndDay_Month.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 147</value>
+  </data>
+  <data name="label_MonthAndDay_Month.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 18</value>
+  </data>
+  <data name="label_MonthAndDay_Month.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="label_MonthAndDay_Month.Text" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="&gt;&gt;label_MonthAndDay_Month.Name" xml:space="preserve">
+    <value>label_MonthAndDay_Month</value>
+  </data>
+  <data name="&gt;&gt;label_MonthAndDay_Month.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_MonthAndDay_Month.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_MonthAndDay_Month.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label_MonthAndDay_Day.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_MonthAndDay_Day.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_MonthAndDay_Day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 147</value>
+  </data>
+  <data name="label_MonthAndDay_Day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 18</value>
+  </data>
+  <data name="label_MonthAndDay_Day.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="label_MonthAndDay_Day.Text" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="&gt;&gt;label_MonthAndDay_Day.Name" xml:space="preserve">
+    <value>label_MonthAndDay_Day</value>
+  </data>
+  <data name="&gt;&gt;label_MonthAndDay_Day.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_MonthAndDay_Day.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;label_MonthAndDay_Day.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="dateTimePicker_DateTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 176</value>
+  </data>
+  <data name="dateTimePicker_DateTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 25</value>
+  </data>
+  <data name="dateTimePicker_DateTime.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_DateTime.Name" xml:space="preserve">
+    <value>dateTimePicker_DateTime</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_DateTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_DateTime.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_DateTime.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="radioButton_DateTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_DateTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButton_DateTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 176</value>
+  </data>
+  <data name="radioButton_DateTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 20</value>
+  </data>
+  <data name="radioButton_DateTime.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;radioButton_DateTime.Name" xml:space="preserve">
+    <value>radioButton_DateTime</value>
+  </data>
+  <data name="&gt;&gt;radioButton_DateTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_DateTime.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_DateTime.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox_Step1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 44</value>
+  </data>
+  <data name="groupBox_Step1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 170</value>
+  </data>
+  <data name="groupBox_Step1.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Step1.Name" xml:space="preserve">
+    <value>groupBox_Step1</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Step1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Step1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Step1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items6" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items7" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items8" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items9" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items10" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items11" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items12" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items13" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items14" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items15" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items16" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items17" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items18" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items19" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items20" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items21" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items22" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items23" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items24" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items25" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items26" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items27" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items28" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items29" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Items30" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 144</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 26</value>
+  </data>
+  <data name="comboBox_MonthAndDay_Day.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;comboBox_MonthAndDay_Day.Name" xml:space="preserve">
+    <value>comboBox_MonthAndDay_Day</value>
+  </data>
+  <data name="&gt;&gt;comboBox_MonthAndDay_Day.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_MonthAndDay_Day.Parent" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_MonthAndDay_Day.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox_Step2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 44</value>
+  </data>
+  <data name="groupBox_Step2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>299, 222</value>
+  </data>
+  <data name="groupBox_Step2.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Step2.Name" xml:space="preserve">
+    <value>groupBox_Step2</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Step2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Step2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_Step2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 18</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>847, 688</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>収支パターンの追加</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MakePayPatternForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

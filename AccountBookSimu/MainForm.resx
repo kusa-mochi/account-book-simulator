@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="listBox_PayPattern.ItemHeight" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="listBox_PayPattern.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 68</value>
+  </data>
+  <data name="listBox_PayPattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 256</value>
+  </data>
+  <data name="listBox_PayPattern.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listBox_PayPattern.Name" xml:space="preserve">
+    <value>listBox_PayPattern</value>
+  </data>
+  <data name="&gt;&gt;listBox_PayPattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox_PayPattern.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox_PayPattern.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="dateTimePicker_From.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 330</value>
+  </data>
+  <data name="dateTimePicker_From.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 25</value>
+  </data>
+  <data name="dateTimePicker_From.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_From.Name" xml:space="preserve">
+    <value>dateTimePicker_From</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_From.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_From.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_From.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="dateTimePicker_To.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 361</value>
+  </data>
+  <data name="dateTimePicker_To.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 25</value>
+  </data>
+  <data name="dateTimePicker_To.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_To.Name" xml:space="preserve">
+    <value>dateTimePicker_To</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_To.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_To.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_To.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="button_AddPayPattern.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="button_AddPayPattern.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 68</value>
+  </data>
+  <data name="button_AddPayPattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="button_AddPayPattern.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button_AddPayPattern.Text" xml:space="preserve">
+    <value>＋</value>
+  </data>
+  <data name="&gt;&gt;button_AddPayPattern.Name" xml:space="preserve">
+    <value>button_AddPayPattern</value>
+  </data>
+  <data name="&gt;&gt;button_AddPayPattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_AddPayPattern.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_AddPayPattern.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="button_RemovePayPattern.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="button_RemovePayPattern.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 114</value>
+  </data>
+  <data name="button_RemovePayPattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="button_RemovePayPattern.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button_RemovePayPattern.Text" xml:space="preserve">
+    <value>－</value>
+  </data>
+  <data name="&gt;&gt;button_RemovePayPattern.Name" xml:space="preserve">
+    <value>button_RemovePayPattern</value>
+  </data>
+  <data name="&gt;&gt;button_RemovePayPattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_RemovePayPattern.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_RemovePayPattern.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button_EditPayPattern.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="button_EditPayPattern.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 160</value>
+  </data>
+  <data name="button_EditPayPattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="button_EditPayPattern.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="button_EditPayPattern.Text" xml:space="preserve">
+    <value>編</value>
+  </data>
+  <data name="&gt;&gt;button_EditPayPattern.Name" xml:space="preserve">
+    <value>button_EditPayPattern</value>
+  </data>
+  <data name="&gt;&gt;button_EditPayPattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_EditPayPattern.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_EditPayPattern.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label_From.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_From.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 335</value>
+  </data>
+  <data name="label_From.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="label_From.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label_From.Text" xml:space="preserve">
+    <value>開始</value>
+  </data>
+  <data name="&gt;&gt;label_From.Name" xml:space="preserve">
+    <value>label_From</value>
+  </data>
+  <data name="&gt;&gt;label_From.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_From.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_From.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_To.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_To.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 366</value>
+  </data>
+  <data name="label_To.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="label_To.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label_To.Text" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="&gt;&gt;label_To.Name" xml:space="preserve">
+    <value>label_To</value>
+  </data>
+  <data name="&gt;&gt;label_To.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_To.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_To.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button_Simulate.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button_Simulate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 392</value>
+  </data>
+  <data name="button_Simulate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 33</value>
+  </data>
+  <data name="button_Simulate.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="button_Simulate.Text" xml:space="preserve">
+    <value>シミュる</value>
+  </data>
+  <data name="&gt;&gt;button_Simulate.Name" xml:space="preserve">
+    <value>button_Simulate</value>
+  </data>
+  <data name="&gt;&gt;button_Simulate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_Simulate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_Simulate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_PayPattern.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_PayPattern.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 41</value>
+  </data>
+  <data name="label_PayPattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 18</value>
+  </data>
+  <data name="label_PayPattern.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label_PayPattern.Text" xml:space="preserve">
+    <value>収支パターン</value>
+  </data>
+  <data name="&gt;&gt;label_PayPattern.Name" xml:space="preserve">
+    <value>label_PayPattern</value>
+  </data>
+  <data name="&gt;&gt;label_PayPattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_PayPattern.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_PayPattern.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button_SaveSetting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_SaveSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 392</value>
+  </data>
+  <data name="button_SaveSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 33</value>
+  </data>
+  <data name="button_SaveSetting.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="button_SaveSetting.Text" xml:space="preserve">
+    <value>設定保存</value>
+  </data>
+  <data name="&gt;&gt;button_SaveSetting.Name" xml:space="preserve">
+    <value>button_SaveSetting</value>
+  </data>
+  <data name="&gt;&gt;button_SaveSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_SaveSetting.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_SaveSetting.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="ファイルFToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 29</value>
+  </data>
+  <data name="ファイルFToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル(&amp;F)</value>
+  </data>
+  <data name="編集ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 29</value>
+  </data>
+  <data name="編集ToolStripMenuItem.Text" xml:space="preserve">
+    <value>編集(&amp;E)</value>
+  </data>
+  <data name="ToolStripMenuItem_Simulate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_Simulate.Text" xml:space="preserve">
+    <value>シミュる(&amp;S)</value>
+  </data>
+  <data name="実行DToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 29</value>
+  </data>
+  <data name="実行DToolStripMenuItem.Text" xml:space="preserve">
+    <value>実行(&amp;D)</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 33</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ToolStripMenuItem_FileOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_FileOpen.Text" xml:space="preserve">
+    <value>開く(&amp;O)</value>
+  </data>
+  <data name="ToolStripMenuItem_Save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_Save.Text" xml:space="preserve">
+    <value>設定の上書き保存(&amp;S)</value>
+  </data>
+  <data name="ToolStripMenuItem_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_SaveAs.Text" xml:space="preserve">
+    <value>設定に名前を付けて保存(&amp;A)</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 6</value>
+  </data>
+  <data name="ToolStripMenuItem_Quit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_Quit.Text" xml:space="preserve">
+    <value>終了(&amp;X)</value>
+  </data>
+  <data name="ToolStripMenuItem_AddPattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_AddPattern.Text" xml:space="preserve">
+    <value>収支パターン追加(&amp;A)</value>
+  </data>
+  <data name="ToolStripMenuItem_RemovePattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_RemovePattern.Text" xml:space="preserve">
+    <value>収支パターン削除(&amp;D)</value>
+  </data>
+  <data name="ToolStripMenuItem_EditPattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_EditPattern.Text" xml:space="preserve">
+    <value>収支パターン編集(&amp;E)</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 18</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>362, 433</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>生涯家計シミュレータ</value>
+  </data>
+  <data name="&gt;&gt;ファイルFToolStripMenuItem.Name" xml:space="preserve">
+    <value>ファイルFToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ファイルFToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_FileOpen.Name" xml:space="preserve">
+    <value>ToolStripMenuItem_FileOpen</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_FileOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_Save.Name" xml:space="preserve">
+    <value>ToolStripMenuItem_Save</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_Save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_SaveAs.Name" xml:space="preserve">
+    <value>ToolStripMenuItem_SaveAs</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_SaveAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_Quit.Name" xml:space="preserve">
+    <value>ToolStripMenuItem_Quit</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_Quit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;編集ToolStripMenuItem.Name" xml:space="preserve">
+    <value>編集ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;編集ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_AddPattern.Name" xml:space="preserve">
+    <value>ToolStripMenuItem_AddPattern</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_AddPattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_RemovePattern.Name" xml:space="preserve">
+    <value>ToolStripMenuItem_RemovePattern</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_RemovePattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_EditPattern.Name" xml:space="preserve">
+    <value>ToolStripMenuItem_EditPattern</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_EditPattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;実行DToolStripMenuItem.Name" xml:space="preserve">
+    <value>実行DToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;実行DToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_Simulate.Name" xml:space="preserve">
+    <value>ToolStripMenuItem_Simulate</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_Simulate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
