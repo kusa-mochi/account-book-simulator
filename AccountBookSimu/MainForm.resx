@@ -212,6 +212,9 @@
   <data name="&gt;&gt;button_AddPayPattern.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="button_RemovePayPattern.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="button_RemovePayPattern.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
@@ -238,6 +241,9 @@
   </data>
   <data name="&gt;&gt;button_RemovePayPattern.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="button_EditPayPattern.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="button_EditPayPattern.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -405,11 +411,68 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="ToolStripMenuItem_NewFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_NewFile.Text" xml:space="preserve">
+    <value>新規作成(&amp;N)</value>
+  </data>
+  <data name="ToolStripMenuItem_FileOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_FileOpen.Text" xml:space="preserve">
+    <value>開く(&amp;O)</value>
+  </data>
+  <data name="ToolStripMenuItem_Save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_Save.Text" xml:space="preserve">
+    <value>設定の上書き保存(&amp;S)</value>
+  </data>
+  <data name="ToolStripMenuItem_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_SaveAs.Text" xml:space="preserve">
+    <value>設定に名前を付けて保存(&amp;A)</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 6</value>
+  </data>
+  <data name="ToolStripMenuItem_Quit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_Quit.Text" xml:space="preserve">
+    <value>終了(&amp;X)</value>
+  </data>
   <data name="ファイルFToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 29</value>
   </data>
   <data name="ファイルFToolStripMenuItem.Text" xml:space="preserve">
     <value>ファイル(&amp;F)</value>
+  </data>
+  <data name="ToolStripMenuItem_AddPattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_AddPattern.Text" xml:space="preserve">
+    <value>収支パターン追加(&amp;A)</value>
+  </data>
+  <data name="ToolStripMenuItem_RemovePattern.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ToolStripMenuItem_RemovePattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_RemovePattern.Text" xml:space="preserve">
+    <value>収支パターン削除(&amp;D)</value>
+  </data>
+  <data name="ToolStripMenuItem_EditPattern.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ToolStripMenuItem_EditPattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="ToolStripMenuItem_EditPattern.Text" xml:space="preserve">
+    <value>収支パターン編集(&amp;E)</value>
   </data>
   <data name="編集ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 29</value>
@@ -417,8 +480,11 @@
   <data name="編集ToolStripMenuItem.Text" xml:space="preserve">
     <value>編集(&amp;E)</value>
   </data>
+  <data name="ToolStripMenuItem_Simulate.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="ToolStripMenuItem_Simulate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 30</value>
+    <value>168, 30</value>
   </data>
   <data name="ToolStripMenuItem_Simulate.Text" xml:space="preserve">
     <value>シミュる(&amp;S)</value>
@@ -452,51 +518,6 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>11</value>
-  </data>
-  <data name="ToolStripMenuItem_FileOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 30</value>
-  </data>
-  <data name="ToolStripMenuItem_FileOpen.Text" xml:space="preserve">
-    <value>開く(&amp;O)</value>
-  </data>
-  <data name="ToolStripMenuItem_Save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 30</value>
-  </data>
-  <data name="ToolStripMenuItem_Save.Text" xml:space="preserve">
-    <value>設定の上書き保存(&amp;S)</value>
-  </data>
-  <data name="ToolStripMenuItem_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 30</value>
-  </data>
-  <data name="ToolStripMenuItem_SaveAs.Text" xml:space="preserve">
-    <value>設定に名前を付けて保存(&amp;A)</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 6</value>
-  </data>
-  <data name="ToolStripMenuItem_Quit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 30</value>
-  </data>
-  <data name="ToolStripMenuItem_Quit.Text" xml:space="preserve">
-    <value>終了(&amp;X)</value>
-  </data>
-  <data name="ToolStripMenuItem_AddPattern.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 30</value>
-  </data>
-  <data name="ToolStripMenuItem_AddPattern.Text" xml:space="preserve">
-    <value>収支パターン追加(&amp;A)</value>
-  </data>
-  <data name="ToolStripMenuItem_RemovePattern.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 30</value>
-  </data>
-  <data name="ToolStripMenuItem_RemovePattern.Text" xml:space="preserve">
-    <value>収支パターン削除(&amp;D)</value>
-  </data>
-  <data name="ToolStripMenuItem_EditPattern.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 30</value>
-  </data>
-  <data name="ToolStripMenuItem_EditPattern.Text" xml:space="preserve">
-    <value>収支パターン編集(&amp;E)</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -580,6 +601,12 @@
     <value>ToolStripMenuItem_Simulate</value>
   </data>
   <data name="&gt;&gt;ToolStripMenuItem_Simulate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_NewFile.Name" xml:space="preserve">
+    <value>ToolStripMenuItem_NewFile</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_NewFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

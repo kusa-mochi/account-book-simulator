@@ -848,6 +848,7 @@
             this.Controls.Add(this.label_Name);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MakePayPatternForm";
+            this.Activated += new System.EventHandler(this.MakePayPatternForm_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Amount)).EndInit();
             this.groupBox_Term.ResumeLayout(false);
             this.groupBox_Term.PerformLayout();

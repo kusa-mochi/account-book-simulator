@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
 
 namespace AccountBookSimu
 {
@@ -15,7 +12,33 @@ namespace AccountBookSimu
         private List<SimuOneDayResult> _simuResult;
         private DateTime _simuFrom;
         private DateTime _simuTo;
+        private FileManager _fileManager;
         public List<string> ListedPayPatternNames;
+        #endregion
+
+        #region Property
+        public int NPayPattern
+        {
+            get
+            {
+                if (_payPatterns == null)
+                {
+                    return -1;
+                }
+
+                return _payPatterns.Count;
+            }
+        }
+
+        public DateTime SimulateFrom
+        {
+            get { return _simuFrom; }
+        }
+
+        public DateTime SimulateTo
+        {
+            get { return _simuTo; }
+        }
         #endregion
 
         #region Constructor
@@ -23,6 +46,8 @@ namespace AccountBookSimu
         {
             _payPatterns = new List<PayPattern>();
             _simuResult = new List<SimuOneDayResult>();
+            _fileManager = new FileManager();
+
             ListedPayPatternNames = new List<string>();
         }
         #endregion
@@ -44,6 +69,19 @@ namespace AccountBookSimu
             }
 
             _payPatterns.RemoveAt(i);
+        }
+
+        public void EditPayPattern(int i, PayPattern pp)
+        {
+            if (
+                (i < 0) ||
+                (_payPatterns.Count - 1 < i)
+                )
+            {
+                throw new ArgumentOutOfRangeException("i");
+            }
+
+            _payPatterns[i] = pp;
         }
 
         public PayPattern GetPayPattern(int i)
@@ -188,12 +226,80 @@ namespace AccountBookSimu
                 fileText += "\n";
             }
 
-            File.WriteAllText(filePath, fileText, Encoding.GetEncoding("shift_jis"));
+            _fileManager.SaveSimulatedFile(filePath, fileText);
         }
 
         public void ReadFile(string filePath)
         {
             throw new NotImplementedException();
+        }
+
+        public bool OpenSettingFile(string filePath)
+        {
+            Trace.TraceInformation("filePath:{0}", filePath);
+            string[] fileData = _fileManager.ReadSettingFile(filePath);
+            if (
+                (fileData == null) ||
+                (fileData.Length < 1) ||
+                (DateTime.TryParse(fileData[0], out _simuFrom) == false) ||
+                (DateTime.TryParse(fileData[1], out _simuTo) == false)
+                )
+            {
+                throw new FileFormatException(filePath);
+            }
+
+            _payPatterns = new List<PayPattern>();
+            try
+            {
+                int nPattern = int.Parse(fileData[2]);
+                for (int i = 0; i < nPattern; i++)
+                {
+                    int iFileData = 3 + (5 * i);
+                    PayPattern pp = new PayPattern();
+                    pp.RequiredPayPattern.Name = fileData[iFileData];
+                    string[] typeSelect = fileData[iFileData + 1].Split(',');
+                    pp.RequiredPayPattern.Frequency = (FREQUENCY)(int.Parse(typeSelect[0]));
+                    pp.RequiredPayPattern.DayType = (DAYTYPE)(int.Parse(typeSelect[1]));
+                    switch (pp.RequiredPayPattern.DayType)
+                    {
+                        case DAYTYPE.WEEKDAY:
+                            pp.RequiredPayPattern.Weekday = (DayOfWeek)(int.Parse(fileData[iFileData + 2]));
+                            break;
+                        case DAYTYPE.DAY:
+                            pp.RequiredPayPattern.Day = int.Parse(fileData[iFileData + 2]);
+                            break;
+                        case DAYTYPE.ORDINAL:
+                            throw new NotImplementedException();
+                            break;
+                        case DAYTYPE.MONTHEND:
+                            // 何もしない。
+                            break;
+                        case DAYTYPE.MONTH_AND_DAY:
+                            string[] monthAndDay = fileData[iFileData + 2].Split(',');
+                            pp.RequiredPayPattern.Month = int.Parse(monthAndDay[0]);
+                            pp.RequiredPayPattern.Day = int.Parse(monthAndDay[1]);
+                            break;
+                        case DAYTYPE.DATETIME:
+                            if (DateTime.TryParse(fileData[iFileData + 2], out pp.RequiredPayPattern.DateTimeValue) == false)
+                            {
+                                // catch以降の処理に進むため，Exceptionを発生させる。
+                                throw new Exception();
+                            }
+                            break;
+                    }
+                    int amount = 0;
+                    int.TryParse(fileData[iFileData + 3], out amount);
+                    pp.RequiredPayPattern.Amount = amount;
+                    pp.RequiredPayPattern.IncomeOrPay = (fileData[iFileData + 4] == "0" ? INCOME_OR_PAY.PAY : INCOME_OR_PAY.INCOME);
+                    _payPatterns.Add(pp);
+                }
+            }
+            catch
+            {
+                throw new FileFormatException(filePath);
+            }
+
+            return true;
         }
 
         public void SaveSettingFile(string filePath)
@@ -233,7 +339,7 @@ namespace AccountBookSimu
                 settingText += (int)pp.RequiredPayPattern.IncomeOrPay + "\n";
             }
 
-            File.WriteAllText(filePath, settingText, Encoding.UTF8);
+            _fileManager.SaveSettingFile(filePath, settingText);
         }
         #endregion
     }

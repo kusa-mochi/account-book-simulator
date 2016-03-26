@@ -53,6 +53,7 @@
             this.ToolStripMenuItem_EditPattern = new System.Windows.Forms.ToolStripMenuItem();
             this.実行DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Simulate = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_NewFile = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +62,7 @@
             this.listBox_PayPattern.FormattingEnabled = true;
             resources.ApplyResources(this.listBox_PayPattern, "listBox_PayPattern");
             this.listBox_PayPattern.Name = "listBox_PayPattern";
+            this.listBox_PayPattern.SelectedIndexChanged += new System.EventHandler(this.listBox_PayPattern_SelectedIndexChanged);
             // 
             // dateTimePicker_From
             // 
@@ -84,6 +86,7 @@
             resources.ApplyResources(this.button_RemovePayPattern, "button_RemovePayPattern");
             this.button_RemovePayPattern.Name = "button_RemovePayPattern";
             this.button_RemovePayPattern.UseVisualStyleBackColor = true;
+            this.button_RemovePayPattern.EnabledChanged += new System.EventHandler(this.button_RemovePayPattern_EnabledChanged);
             this.button_RemovePayPattern.Click += new System.EventHandler(this.button_RemovePayPattern_Click);
             // 
             // button_EditPayPattern
@@ -91,6 +94,7 @@
             resources.ApplyResources(this.button_EditPayPattern, "button_EditPayPattern");
             this.button_EditPayPattern.Name = "button_EditPayPattern";
             this.button_EditPayPattern.UseVisualStyleBackColor = true;
+            this.button_EditPayPattern.EnabledChanged += new System.EventHandler(this.button_EditPayPattern_EnabledChanged);
             this.button_EditPayPattern.Click += new System.EventHandler(this.button_EditPayPattern_Click);
             // 
             // label_From
@@ -108,6 +112,7 @@
             resources.ApplyResources(this.button_Simulate, "button_Simulate");
             this.button_Simulate.Name = "button_Simulate";
             this.button_Simulate.UseVisualStyleBackColor = true;
+            this.button_Simulate.EnabledChanged += new System.EventHandler(this.button_Simulate_EnabledChanged);
             this.button_Simulate.Click += new System.EventHandler(this.button_Simulate_Click);
             // 
             // label_PayPattern
@@ -135,6 +140,7 @@
             // ファイルFToolStripMenuItem
             // 
             this.ファイルFToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem_NewFile,
             this.ToolStripMenuItem_FileOpen,
             this.ToolStripMenuItem_Save,
             this.ToolStripMenuItem_SaveAs,
@@ -189,14 +195,14 @@
             // 
             // ToolStripMenuItem_RemovePattern
             // 
-            this.ToolStripMenuItem_RemovePattern.Name = "ToolStripMenuItem_RemovePattern";
             resources.ApplyResources(this.ToolStripMenuItem_RemovePattern, "ToolStripMenuItem_RemovePattern");
+            this.ToolStripMenuItem_RemovePattern.Name = "ToolStripMenuItem_RemovePattern";
             this.ToolStripMenuItem_RemovePattern.Click += new System.EventHandler(this.ToolStripMenuItem_RemovePattern_Click);
             // 
             // ToolStripMenuItem_EditPattern
             // 
-            this.ToolStripMenuItem_EditPattern.Name = "ToolStripMenuItem_EditPattern";
             resources.ApplyResources(this.ToolStripMenuItem_EditPattern, "ToolStripMenuItem_EditPattern");
+            this.ToolStripMenuItem_EditPattern.Name = "ToolStripMenuItem_EditPattern";
             this.ToolStripMenuItem_EditPattern.Click += new System.EventHandler(this.ToolStripMenuItem_EditPattern_Click);
             // 
             // 実行DToolStripMenuItem
@@ -208,9 +214,15 @@
             // 
             // ToolStripMenuItem_Simulate
             // 
-            this.ToolStripMenuItem_Simulate.Name = "ToolStripMenuItem_Simulate";
             resources.ApplyResources(this.ToolStripMenuItem_Simulate, "ToolStripMenuItem_Simulate");
+            this.ToolStripMenuItem_Simulate.Name = "ToolStripMenuItem_Simulate";
             this.ToolStripMenuItem_Simulate.Click += new System.EventHandler(this.ToolStripMenuItem_Simulate_Click);
+            // 
+            // ToolStripMenuItem_NewFile
+            // 
+            this.ToolStripMenuItem_NewFile.Name = "ToolStripMenuItem_NewFile";
+            resources.ApplyResources(this.ToolStripMenuItem_NewFile, "ToolStripMenuItem_NewFile");
+            this.ToolStripMenuItem_NewFile.Click += new System.EventHandler(this.ToolStripMenuItem_NewFile_Click);
             // 
             // MainForm
             // 
@@ -264,6 +276,7 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_EditPattern;
         private System.Windows.Forms.ToolStripMenuItem 実行DToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Simulate;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_NewFile;
     }
 }
 

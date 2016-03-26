@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AccountBookSimu
@@ -14,34 +8,14 @@ namespace AccountBookSimu
     {
         public PayPattern payPattern;
         public List<string> listedPayPatternNames;
+        public bool fNewPattern;
 
         public MakePayPatternForm()
         {
             InitializeComponent();
 
             this.listedPayPatternNames = new List<string>();
-
-            this.comboBox_Weekday.SelectedIndex = 0;
-            this.comboBox_Day.SelectedIndex = 0;
-            this.comboBox_Ordinal_Number.SelectedIndex = 0;
-            this.comboBox_Ordinal_Weekday.SelectedIndex = 0;
-            this.comboBox_MonthAndDay_Month.SelectedIndex = 0;
-            this.comboBox_MonthAndDay_Day.SelectedIndex = 0;
-            this.comboBox_InOrPay.SelectedIndex = 0;
-
-            this.comboBox_IncreaseDecrease_Weekday.SelectedIndex = 0;
-            this.comboBox_IncreaseDecrease_Day.SelectedIndex = 0;
-            this.comboBox_IncreaseDecrease_Ordinal_Number.SelectedIndex = 0;
-            this.comboBox_IncreaseDecrease_Ordinal_Weekday.SelectedIndex = 0;
-            this.comboBox_IncreaseDecrease_MonthAndDay_Month.SelectedIndex = 0;
-            this.comboBox_IncreaseDecrease_MonthAndDay_Day.SelectedIndex = 0;
-            this.comboBox_IncreaseDecrease_InOrDe.SelectedIndex = 0;
-
-            this.radioButton_Monthly.Checked = true;
-            this.radioButton_Day.Checked = true;
-
-            this.radioButton_IncreaseDecrease_Monthly.Checked = true;
-            this.radioButton_IncreaseDecrease_Day.Checked = true;
+            fNewPattern = true;
         }
 
         private void checkBox_Term_CheckedChanged(object sender, EventArgs e)
@@ -77,7 +51,7 @@ namespace AccountBookSimu
                 return false;
             }
 
-            if (this.IsNewName() == false)
+            if ((fNewPattern == true) && (this.IsNewName() == false))
             {
                 MessageBox.Show("表示名は既に使われているため使用できません。別の名前を指定してください。");
                 this.textBox_Name.Focus();
@@ -428,6 +402,103 @@ namespace AccountBookSimu
                     break;
                 default:
                     break;
+            }
+        }
+
+        private void MakePayPatternForm_Activated(object sender, EventArgs e)
+        {
+            if (fNewPattern == true)
+            {
+                this.comboBox_Weekday.SelectedIndex = 0;
+                this.comboBox_Day.SelectedIndex = 0;
+                this.comboBox_Ordinal_Number.SelectedIndex = 0;
+                this.comboBox_Ordinal_Weekday.SelectedIndex = 0;
+                this.comboBox_MonthAndDay_Month.SelectedIndex = 0;
+                this.comboBox_MonthAndDay_Day.SelectedIndex = 0;
+                this.comboBox_InOrPay.SelectedIndex = 0;
+
+                this.comboBox_IncreaseDecrease_Weekday.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_Day.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_Ordinal_Number.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_Ordinal_Weekday.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_MonthAndDay_Month.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_MonthAndDay_Day.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_InOrDe.SelectedIndex = 0;
+
+                this.radioButton_Monthly.Checked = true;
+                this.radioButton_Day.Checked = true;
+
+                this.radioButton_IncreaseDecrease_Monthly.Checked = true;
+                this.radioButton_IncreaseDecrease_Day.Checked = true;
+            }
+            else
+            {
+                this.textBox_Name.Text = payPattern.RequiredPayPattern.Name;
+
+                this.comboBox_Weekday.SelectedIndex = (int)payPattern.RequiredPayPattern.Weekday;
+                this.comboBox_Day.SelectedIndex = payPattern.RequiredPayPattern.Day - 1;
+                this.comboBox_Ordinal_Number.SelectedIndex = payPattern.RequiredPayPattern.OrdinalNumber - 1;
+                this.comboBox_Ordinal_Weekday.SelectedIndex = (int)payPattern.RequiredPayPattern.Weekday;
+                this.comboBox_MonthAndDay_Month.SelectedIndex = payPattern.RequiredPayPattern.Month - 1;
+                this.comboBox_MonthAndDay_Day.SelectedIndex = payPattern.RequiredPayPattern.Day - 1;
+                this.comboBox_InOrPay.SelectedIndex = (int)payPattern.RequiredPayPattern.IncomeOrPay;
+
+                // TODO
+                this.comboBox_IncreaseDecrease_Weekday.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_Day.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_Ordinal_Number.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_Ordinal_Weekday.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_MonthAndDay_Month.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_MonthAndDay_Day.SelectedIndex = 0;
+                this.comboBox_IncreaseDecrease_InOrDe.SelectedIndex = 0;
+
+                switch (payPattern.RequiredPayPattern.Frequency)
+                {
+                    case FREQUENCY.DAILY:
+                        this.radioButton_Daily.Checked = true;
+                        break;
+                    case FREQUENCY.WEEKLY:
+                        this.radioButton_Weekly.Checked = true;
+                        break;
+                    case FREQUENCY.MONTHLY:
+                        this.radioButton_Monthly.Checked = true;
+                        break;
+                    case FREQUENCY.YEARLY:
+                        this.radioButton_Yearly.Checked = true;
+                        break;
+                    case FREQUENCY.ONLY_ONCE:
+                        this.radioButton_OnlyOnce.Checked = true;
+                        break;
+                }
+
+                switch (payPattern.RequiredPayPattern.DayType)
+                {
+                    case DAYTYPE.WEEKDAY:
+                        this.radioButton_Weekday.Checked = true;
+                        break;
+                    case DAYTYPE.DAY:
+                        this.radioButton_Day.Checked = true;
+                        break;
+                    case DAYTYPE.ORDINAL:
+                        this.radioButton_Ordinal.Checked = true;
+                        break;
+                    case DAYTYPE.MONTHEND:
+                        this.radioButton_MonthEnd.Checked = true;
+                        break;
+                    case DAYTYPE.MONTH_AND_DAY:
+                        this.radioButton_MonthAndDay.Checked = true;
+                        break;
+                    case DAYTYPE.DATETIME:
+                        this.radioButton_DateTime.Checked = true;
+                        break;
+                }
+
+                this.numericUpDown_Amount.Value = payPattern.RequiredPayPattern.Amount;
+                this.comboBox_InOrPay.SelectedIndex = (int)payPattern.RequiredPayPattern.IncomeOrPay;
+
+                // TODO
+                this.radioButton_IncreaseDecrease_Monthly.Checked = true;
+                this.radioButton_IncreaseDecrease_Day.Checked = true;
             }
         }
     }
