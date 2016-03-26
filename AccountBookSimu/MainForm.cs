@@ -69,6 +69,7 @@ namespace AccountBookSimu
             {
                 PayPattern payPattern = makePayPatternDialog.payPattern;
                 _data.EditPayPattern(this.listBox_PayPattern.SelectedIndex, payPattern);
+                this.listBox_PayPattern.Items[this.listBox_PayPattern.SelectedIndex] = payPattern.RequiredPayPattern.Name;
             }
         }
 

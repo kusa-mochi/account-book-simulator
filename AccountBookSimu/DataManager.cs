@@ -140,7 +140,10 @@ namespace AccountBookSimu
                                     }
                                     break;
                                 case DAYTYPE.ORDINAL:
-                                    throw new NotImplementedException();
+                                    if (this.IsOrdinalWeekday(d, pp.RequiredPayPattern.OrdinalNumber, pp.RequiredPayPattern.Weekday))
+                                    {
+                                        fAddResult = true;
+                                    }
                                     break;
                                 case DAYTYPE.MONTHEND:
                                     if (d.Day == DateTime.DaysInMonth(d.Year, d.Month))
@@ -269,7 +272,9 @@ namespace AccountBookSimu
                             pp.RequiredPayPattern.Day = int.Parse(fileData[iFileData + 2]);
                             break;
                         case DAYTYPE.ORDINAL:
-                            throw new NotImplementedException();
+                            string[] ordinalNumberAndWeekday = fileData[iFileData + 2].Split(',');
+                            pp.RequiredPayPattern.OrdinalNumber = int.Parse(ordinalNumberAndWeekday[0]);
+                            pp.RequiredPayPattern.Weekday = (DayOfWeek)int.Parse(ordinalNumberAndWeekday[1]);
                             break;
                         case DAYTYPE.MONTHEND:
                             // 何もしない。
@@ -340,6 +345,23 @@ namespace AccountBookSimu
             }
 
             _fileManager.SaveSettingFile(filePath, settingText);
+        }
+        #endregion
+
+        #region Private Method
+        private bool IsOrdinalWeekday(DateTime dt, int ordinalNumber, DayOfWeek weekday)
+        {
+            DayOfWeek w = dt.DayOfWeek;
+            if (w != weekday) return false;
+            int day = dt.Day;
+            int ord = 0;
+            while (day > 0)
+            {
+                day -= 7;
+                ord++;
+            }
+
+            return (ord == ordinalNumber);
         }
         #endregion
     }

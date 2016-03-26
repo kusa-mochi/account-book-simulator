@@ -127,6 +127,8 @@ namespace AccountBookSimu
 
             payPattern.RequiredPayPattern.Amount = (int)this.numericUpDown_Amount.Value;
             payPattern.RequiredPayPattern.IncomeOrPay = (INCOME_OR_PAY)this.comboBox_InOrPay.SelectedIndex;
+
+            // TODO
         }
 
         private void button_Cancel_Click(object sender, EventArgs e)
