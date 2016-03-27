@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Diagnostics;
+using System.IO;
 using System.Text;
 
 namespace AccountBookSimu
@@ -17,7 +18,9 @@ namespace AccountBookSimu
 
         public void SaveSimulatedFile(string filePath, string fileText)
         {
+            Trace.TraceInformation("begin FileManager.SaveSimulatedFile");
             File.WriteAllText(filePath, fileText, Encoding.GetEncoding("shift_jis"));
+            Trace.TraceInformation("end FileManager.SaveSimulatedFile");
         }
     }
 }

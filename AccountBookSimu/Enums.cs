@@ -30,4 +30,13 @@
         INCREASE,
         DECREASE
     }
+
+    public enum STATE_APP
+    {
+        NO_SIMULATING,
+        SIMULATING,
+        FILE_SAVING,
+        FILE_READING,
+        ABORT
+    }
 }

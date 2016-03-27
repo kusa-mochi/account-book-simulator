@@ -13,7 +13,11 @@ namespace AccountBookSimu
         private DateTime _simuFrom;
         private DateTime _simuTo;
         private FileManager _fileManager;
+        //private int _simulationProgress;
+        private STATE_APP _applicationState;
+        private bool _fCancelSimulation;
         public List<string> ListedPayPatternNames;
+        public AsyncMessenger asyncMessenger;
         #endregion
 
         #region Property
@@ -39,6 +43,22 @@ namespace AccountBookSimu
         {
             get { return _simuTo; }
         }
+
+        //public int SimulationProgress
+        //{
+        //    get { return _simulationProgress; }
+        //}
+
+        public STATE_APP ApplicationState
+        {
+            get { return _applicationState; }
+            set { _applicationState = value; }
+        }
+
+        public bool CancelSimulationFlag
+        {
+            set { _fCancelSimulation = value; }
+        }
         #endregion
 
         #region Constructor
@@ -47,8 +67,10 @@ namespace AccountBookSimu
             _payPatterns = new List<PayPattern>();
             _simuResult = new List<SimuOneDayResult>();
             _fileManager = new FileManager();
+            _applicationState = STATE_APP.NO_SIMULATING;
 
             ListedPayPatternNames = new List<string>();
+            asyncMessenger = null;
         }
         #endregion
 
@@ -104,8 +126,11 @@ namespace AccountBookSimu
 
         public void DoSimulation()
         {
+            asyncMessenger.ApplicationState = STATE_APP.SIMULATING;
+
             if (_simuResult == null)
             {
+                asyncMessenger.ApplicationState = STATE_APP.ABORT;
                 throw new InvalidOperationException("DoSimulation()");
             }
 
@@ -114,6 +139,11 @@ namespace AccountBookSimu
 
             for (DateTime d = _simuFrom; d < _simuTo; d = d.AddDays(1))
             {
+                if (_fCancelSimulation == true)
+                {
+                    this.asyncMessenger.ApplicationState = STATE_APP.NO_SIMULATING;
+                    return;
+                }
                 SimuOneDayResult result = new SimuOneDayResult();
                 result.Date = d;
                 foreach (PayPattern pp in _payPatterns)
@@ -193,10 +223,22 @@ namespace AccountBookSimu
                     _simuResult.Add(result);
                 }
             }
+
+            asyncMessenger.ApplicationState = STATE_APP.FILE_SAVING;
         }
 
         public void SaveFile(string filePath)
         {
+            Trace.TraceInformation("begin DataManager.SaveFile");
+
+            if (asyncMessenger == null)
+            {
+                asyncMessenger.ApplicationState = STATE_APP.ABORT;
+                throw new InvalidOperationException("SaveFile()");
+            }
+
+            asyncMessenger.ApplicationState = STATE_APP.FILE_SAVING;
+
             string fileText = "年月日,収支,累積収支";
 
             foreach (string s in ListedPayPatternNames)
@@ -205,6 +247,9 @@ namespace AccountBookSimu
             }
 
             fileText += "\n";
+
+            //_simulationProgress = 0;
+            this.asyncMessenger.IntMessage = 0;
 
             foreach (SimuOneDayResult r in _simuResult)
             {
@@ -227,19 +272,24 @@ namespace AccountBookSimu
                     }
                 }
                 fileText += "\n";
+                //_simulationProgress++;
+                asyncMessenger.IntMessage++;
             }
 
+            Trace.TraceInformation("  go to FileManager.SaveSimulatedFile");
             _fileManager.SaveSimulatedFile(filePath, fileText);
-        }
 
-        public void ReadFile(string filePath)
-        {
-            throw new NotImplementedException();
+            asyncMessenger.ApplicationState = STATE_APP.NO_SIMULATING;
+
+            Trace.TraceInformation("end DataManager.SaveFile");
         }
 
         public bool OpenSettingFile(string filePath)
         {
             Trace.TraceInformation("filePath:{0}", filePath);
+
+            //_applicationState = STATE_APP.FILE_READING;
+
             string[] fileData = _fileManager.ReadSettingFile(filePath);
             if (
                 (fileData == null) ||
@@ -248,6 +298,7 @@ namespace AccountBookSimu
                 (DateTime.TryParse(fileData[1], out _simuTo) == false)
                 )
             {
+                //_applicationState = STATE_APP.ABORT;
                 throw new FileFormatException(filePath);
             }
 
@@ -301,14 +352,18 @@ namespace AccountBookSimu
             }
             catch
             {
+                //_applicationState = STATE_APP.ABORT;
                 throw new FileFormatException(filePath);
             }
 
+            //_applicationState = STATE_APP.NO_SIMULATING;
             return true;
         }
 
         public void SaveSettingFile(string filePath)
         {
+            //_applicationState = STATE_APP.FILE_SAVING;
+
             string settingText = "";
 
             settingText += _simuFrom.ToString("yyyy/MM/dd") + "\n";
@@ -345,6 +400,8 @@ namespace AccountBookSimu
             }
 
             _fileManager.SaveSettingFile(filePath, settingText);
+
+            //_applicationState = STATE_APP.NO_SIMULATING;
         }
         #endregion
 

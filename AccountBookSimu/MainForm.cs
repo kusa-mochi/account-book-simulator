@@ -155,8 +155,8 @@ namespace AccountBookSimu
                     _data.ListedPayPatternNames.Add(s);
                 }
 
-                _data.DoSimulation();
-                _data.SaveFile(sfd.FileName);
+                ProgressForm progressForm = new ProgressForm(_data, sfd.FileName);
+                progressForm.ShowDialog();
             }
         }
 
