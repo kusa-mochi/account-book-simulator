@@ -42,8 +42,8 @@
             this.progressBar_Simulation.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar_Simulation.TabIndex = 0;
             this.progressBar_Simulation.Value = 50;
-            //this.progressBar_Simulation.MouseDown += new System.Windows.Forms.MouseEventHandler(this.progressBar_Simulation_MouseDown);
-            //this.progressBar_Simulation.MouseMove += new System.Windows.Forms.MouseEventHandler(this.progressBar_Simulation_MouseMove);
+            this.progressBar_Simulation.MouseDown += new System.Windows.Forms.MouseEventHandler(this.progressBar_Simulation_MouseDown);
+            this.progressBar_Simulation.MouseMove += new System.Windows.Forms.MouseEventHandler(this.progressBar_Simulation_MouseMove);
             // 
             // button_Cancel
             // 
@@ -63,8 +63,8 @@
             this.label_Message.Size = new System.Drawing.Size(52, 18);
             this.label_Message.TabIndex = 2;
             this.label_Message.Text = "label1";
-            //this.label_Message.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Message_MouseDown);
-            //this.label_Message.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label_Message_MouseMove);
+            this.label_Message.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Message_MouseDown);
+            this.label_Message.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label_Message_MouseMove);
             // 
             // label_Percent
             // 
@@ -75,8 +75,8 @@
             this.label_Percent.TabIndex = 3;
             this.label_Percent.Text = "label2";
             this.label_Percent.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            //this.label_Percent.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Percent_MouseDown);
-            //this.label_Percent.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label_Percent_MouseMove);
+            this.label_Percent.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Percent_MouseDown);
+            this.label_Percent.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label_Percent_MouseMove);
             // 
             // ProgressForm
             // 
@@ -92,8 +92,8 @@
             this.Name = "ProgressForm";
             this.Text = "ProgressForm";
             this.Shown += new System.EventHandler(this.ProgressForm_Shown);
-            //this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ProgressForm_MouseDown);
-            //this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ProgressForm_MouseMove);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ProgressForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ProgressForm_MouseMove);
             this.ResumeLayout(false);
             this.PerformLayout();
 

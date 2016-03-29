@@ -87,7 +87,6 @@ namespace AccountBookSimu
                 (_asyncMessenger.ApplicationState == STATE_APP.FILE_SAVING)
                 )
             {
-                //Trace.TraceInformation("  app state:" + ((int)_asyncMessenger.ApplicationState).ToString());
                 this.Invoke(new updateProgressDelegate(this.InvokeUpdateProgressBar));
             }
 
@@ -111,62 +110,62 @@ namespace AccountBookSimu
             this.Close();
         }
 
-        //private void WindowClick(MouseEventArgs e)
-        //{
-        //    //if ((e.Button & MouseButtons.Left) == MouseButtons.Left)
-        //    //{
-        //    //    _mouseX = e.X;
-        //    //    _mouseY = e.Y;
-        //    //}
-        //}
+        private void WindowClick(MouseEventArgs e)
+        {
+            if ((e.Button & MouseButtons.Left) == MouseButtons.Left)
+            {
+                _mouseX = e.X;
+                _mouseY = e.Y;
+            }
+        }
 
-        //private void WindowMove(MouseEventArgs e)
-        //{
-        //    //if ((e.Button & MouseButtons.Left) == MouseButtons.Left)
-        //    //{
-        //    //    this.Left += e.X - _mouseX;
-        //    //    this.Top += e.Y - _mouseY;
-        //    //}
-        //}
+        private void WindowMove(MouseEventArgs e)
+        {
+            if ((e.Button & MouseButtons.Left) == MouseButtons.Left)
+            {
+                this.Left += e.X - _mouseX;
+                this.Top += e.Y - _mouseY;
+            }
+        }
 
-        //private void ProgressForm_MouseDown(object sender, MouseEventArgs e)
-        //{
-        //    this.WindowClick(e);
-        //}
+        private void ProgressForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.WindowClick(e);
+        }
 
-        //private void ProgressForm_MouseMove(object sender, MouseEventArgs e)
-        //{
-        //    this.WindowMove(e);
-        //}
+        private void ProgressForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.WindowMove(e);
+        }
 
-        //private void label_Message_MouseDown(object sender, MouseEventArgs e)
-        //{
-        //    this.WindowClick(e);
-        //}
+        private void label_Message_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.WindowClick(e);
+        }
 
-        //private void label_Message_MouseMove(object sender, MouseEventArgs e)
-        //{
-        //    this.WindowMove(e);
-        //}
+        private void label_Message_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.WindowMove(e);
+        }
 
-        //private void label_Percent_MouseDown(object sender, MouseEventArgs e)
-        //{
-        //    this.WindowClick(e);
-        //}
+        private void label_Percent_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.WindowClick(e);
+        }
 
-        //private void label_Percent_MouseMove(object sender, MouseEventArgs e)
-        //{
-        //    this.WindowMove(e);
-        //}
+        private void label_Percent_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.WindowMove(e);
+        }
 
-        //private void progressBar_Simulation_MouseDown(object sender, MouseEventArgs e)
-        //{
-        //    this.WindowClick(e);
-        //}
+        private void progressBar_Simulation_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.WindowClick(e);
+        }
 
-        //private void progressBar_Simulation_MouseMove(object sender, MouseEventArgs e)
-        //{
-        //    this.WindowMove(e);
-        //}
+        private void progressBar_Simulation_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.WindowMove(e);
+        }
     }
 }
