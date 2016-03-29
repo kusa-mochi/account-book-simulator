@@ -40,10 +40,7 @@ namespace AccountBookSimu
 
         private void InitControls()
         {
-            DateTime from = _data.SimulateFrom;
-            DateTime to = _data.SimulateTo;
-            TimeSpan span = to - from;
-            _maxProgress = span.Days;
+            _maxProgress = _data.NSimuResult;
 
             this.progressBar_Simulation.Minimum = 0;
             this.progressBar_Simulation.Maximum = _maxProgress;
@@ -58,6 +55,7 @@ namespace AccountBookSimu
         {
             Trace.TraceInformation("begin _data.DoSimulation");
             _data.DoSimulation();
+            this.Invoke(new updateProgressDelegate(this.InvokeInitProgressBar));
             Trace.TraceInformation("begin _data.SaveFile");
             _data.SaveFile(_filePath);
             Trace.TraceInformation("end _data.SaveFile");
@@ -93,6 +91,12 @@ namespace AccountBookSimu
             MessageBox.Show("シミュったお。(´・ω・`)");
             Trace.TraceInformation("end UpdateProgressBar");
             this.Invoke(new updateProgressDelegate(this.InvokeCloseDialog));
+        }
+
+        private void InvokeInitProgressBar()
+        {
+            _maxProgress = _data.NSimuResult;
+            this.progressBar_Simulation.Maximum = _maxProgress;
         }
 
         private void InvokeUpdateProgressBar()

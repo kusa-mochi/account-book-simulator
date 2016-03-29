@@ -53,6 +53,10 @@ namespace AccountBookSimu
                 this.button_EditPayPattern.Enabled = false;
                 this.button_Simulate.Enabled = false;
             }
+            else
+            {
+                this.listBox_PayPattern.SelectedIndex = (iPattern < this.listBox_PayPattern.Items.Count) ? iPattern : iPattern - 1;
+            }
         }
 
         private void EditPayPattern()
@@ -134,7 +138,7 @@ namespace AccountBookSimu
 
         private void Simulate()
         {
-            if (this.dateTimePicker_From.Value > this.dateTimePicker_To.Value)
+            if (this.dateTimePicker_From.Value > this.dateTimePicker_To.Value.AddDays(1))
             {
                 MessageBox.Show("期間の指定が不正です。シミュレーションの開始時期は終了時期以前に設定してください。");
                 this.dateTimePicker_From.Focus();

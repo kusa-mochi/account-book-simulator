@@ -33,6 +33,11 @@ namespace AccountBookSimu
             }
         }
 
+        public int NSimuResult
+        {
+            get { return _simuResult.Count; }
+        }
+
         public DateTime SimulateFrom
         {
             get { return _simuFrom; }
