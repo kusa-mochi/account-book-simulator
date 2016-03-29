@@ -13,6 +13,8 @@ namespace AccountBookSimu
         private AsyncMessenger _asyncMessenger;
         private Thread simulationThread;
         private Thread updateProgressBarThread;
+        private int _mouseX;
+        private int _mouseY;
 
         delegate void updateProgressDelegate();
 
@@ -42,7 +44,6 @@ namespace AccountBookSimu
             DateTime to = _data.SimulateTo;
             TimeSpan span = to - from;
             _maxProgress = span.Days;
-            //MessageBox.Show("_maxProgress:" + _maxProgress.ToString());
 
             this.progressBar_Simulation.Minimum = 0;
             this.progressBar_Simulation.Maximum = _maxProgress;
@@ -64,39 +65,14 @@ namespace AccountBookSimu
 
         private void ProgressForm_Shown(object sender, EventArgs e)
         {
-            //for (int progressValue = 0; (progressValue <= _maxProgress) && (_asyncMessenger.ApplicationState == STATE_APP.SIMULATING); progressValue = _asyncMessenger.IntMessage)
-            //{
-            //    this.progressBar_Simulation.Value = progressValue;
-            //    this.label_Message.Text = "シミュってるなう。けーね！";
-            //    this.label_Percent.Text = progressValue.ToString() + "/" + _maxProgress.ToString();
-            //}
-            //while (_asyncMessenger.ApplicationState == STATE_APP.FILE_SAVING)
-            //{
-            //    this.label_Message.Text = "ファイル保存中なう。けーね！";
-            //    this.label_Percent.Text = "";
-            //}
-
-            //MessageBox.Show("シミュレーションが終了しますた。(´・ω・`)");
-            //this.Close();
-
-
             simulationThread = new Thread(new ThreadStart(this.DoSimulation));
             updateProgressBarThread = new Thread(new ThreadStart(this.UpdateProgressBar));
             simulationThread.Start();
             updateProgressBarThread.Start();
-
-            //updateProgressBarThread.Join();
-
-            //MessageBox.Show("シミュったお。(´・ω・`)");
-            //this.Close();
         }
 
         private void button_Cancel_Click(object sender, EventArgs e)
         {
-            //_data.CancelSimulationFlag = true;
-            //Thread.Sleep(1000); // シミュレーションを行っているスレッドが終了するのを待つ。
-            //_data.CancelSimulationFlag = false;
-
             simulationThread.Abort();
             updateProgressBarThread.Abort();
             this.DialogResult = DialogResult.Cancel;
@@ -122,30 +98,75 @@ namespace AccountBookSimu
 
         private void InvokeUpdateProgressBar()
         {
-            //Trace.TraceInformation("begin InvokeUpdateProgressBar");
-            //switch (_asyncMessenger.ApplicationState)
-            //{
-            //    case STATE_APP.SIMULATING:
-                    int progressValue = _asyncMessenger.IntMessage;
-                    this.progressBar_Simulation.Value = progressValue;
-                    this.label_Message.Text = "シミュり中。けーねっ！";
-                    this.label_Percent.Text = progressValue.ToString() + "/" + _maxProgress.ToString();
-            //        break;
-            //    case STATE_APP.FILE_SAVING:
-            //        this.progressBar_Simulation.Value = _maxProgress;
-            //        this.label_Message.Text = "ファイル保存中。けーねっ！";
-            //        this.label_Percent.Text = "";
-            //        break;
-            //    default:
-            //        // 何もしない。
-            //        break;
-            //}
-            //Trace.TraceInformation("end InvokeUpdateProgressBar");
+            Trace.TraceInformation("begin InvokeUpdateProgressBar");
+            int progressValue = _asyncMessenger.IntMessage;
+            this.progressBar_Simulation.Value = progressValue;
+            this.label_Message.Text = "シミュり中。けーねっ！";
+            this.label_Percent.Text = progressValue.ToString() + "/" + _maxProgress.ToString();
+            Trace.TraceInformation("end InvokeUpdateProgressBar");
         }
 
         private void InvokeCloseDialog()
         {
             this.Close();
         }
+
+        //private void WindowClick(MouseEventArgs e)
+        //{
+        //    //if ((e.Button & MouseButtons.Left) == MouseButtons.Left)
+        //    //{
+        //    //    _mouseX = e.X;
+        //    //    _mouseY = e.Y;
+        //    //}
+        //}
+
+        //private void WindowMove(MouseEventArgs e)
+        //{
+        //    //if ((e.Button & MouseButtons.Left) == MouseButtons.Left)
+        //    //{
+        //    //    this.Left += e.X - _mouseX;
+        //    //    this.Top += e.Y - _mouseY;
+        //    //}
+        //}
+
+        //private void ProgressForm_MouseDown(object sender, MouseEventArgs e)
+        //{
+        //    this.WindowClick(e);
+        //}
+
+        //private void ProgressForm_MouseMove(object sender, MouseEventArgs e)
+        //{
+        //    this.WindowMove(e);
+        //}
+
+        //private void label_Message_MouseDown(object sender, MouseEventArgs e)
+        //{
+        //    this.WindowClick(e);
+        //}
+
+        //private void label_Message_MouseMove(object sender, MouseEventArgs e)
+        //{
+        //    this.WindowMove(e);
+        //}
+
+        //private void label_Percent_MouseDown(object sender, MouseEventArgs e)
+        //{
+        //    this.WindowClick(e);
+        //}
+
+        //private void label_Percent_MouseMove(object sender, MouseEventArgs e)
+        //{
+        //    this.WindowMove(e);
+        //}
+
+        //private void progressBar_Simulation_MouseDown(object sender, MouseEventArgs e)
+        //{
+        //    this.WindowClick(e);
+        //}
+
+        //private void progressBar_Simulation_MouseMove(object sender, MouseEventArgs e)
+        //{
+        //    this.WindowMove(e);
+        //}
     }
 }

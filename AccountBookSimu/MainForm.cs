@@ -77,8 +77,8 @@ namespace AccountBookSimu
         {
             this.listBox_PayPattern.Items.Clear();
             _data = new DataManager();
-            this.dateTimePicker_From.Value = DateTime.Now;
-            this.dateTimePicker_To.Value = DateTime.Now;
+            this.dateTimePicker_From.Value = DateTime.Today;
+            this.dateTimePicker_To.Value = DateTime.Today;
             this.button_RemovePayPattern.Enabled = false;
             this.button_EditPayPattern.Enabled = false;
             this.button_Simulate.Enabled = false;

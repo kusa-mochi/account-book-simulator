@@ -12,7 +12,7 @@ namespace AccountBookSimu
             get { return _name; }
             set
             {
-                if((value.Length >= 80)||string.IsNullOrEmpty(value)||string.IsNullOrWhiteSpace(value))
+                if ((value.Length >= 80) || string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException("Name");
                 }
@@ -45,7 +45,7 @@ namespace AccountBookSimu
             get { return _day; }
             set
             {
-                if((value <= 0)||(32 <= value))
+                if ((value <= 0) || (32 <= value))
                 {
                     throw new ArgumentOutOfRangeException("Day");
                 }
@@ -77,7 +77,7 @@ namespace AccountBookSimu
             get { return _amount; }
             set
             {
-                if((value < 0)||(1000000000 < value))
+                if ((value < 0) || (1000000000 < value))
                 {
                     throw new ArgumentOutOfRangeException("Amount");
                 }
@@ -87,5 +87,20 @@ namespace AccountBookSimu
         }
 
         public INCOME_OR_PAY IncomeOrPay;
+
+        public StructRequiredPayPattern(int n)
+        {
+            Enabled = false;
+            _name = "";
+            Frequency = FREQUENCY.MONTHLY;
+            DayType = DAYTYPE.DAY;
+            Weekday = DayOfWeek.Sunday;
+            _month = 1;
+            _day = 1;
+            _ordinalNumber = 1;
+            DateTimeValue = DateTime.Today;
+            _amount = 0;
+            IncomeOrPay = INCOME_OR_PAY.PAY;
+        }
     }
 }
