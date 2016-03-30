@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace AccountBookSimu
@@ -7,20 +8,31 @@ namespace AccountBookSimu
     public partial class MainForm : Form
     {
         private DataManager _data;
+        private string _filePath;
 
         public MainForm()
         {
             InitializeComponent();
 
-            _data = new DataManager();
+            this.InitParams();
+            this.InitControls();
         }
 
         private void InitControls()
         {
+            this.dateTimePicker_From.Value = DateTime.Today;
+            this.dateTimePicker_To.Value = DateTime.Today;
             this.listBox_PayPattern.Items.Clear();
             this.button_RemovePayPattern.Enabled = false;
             this.button_EditPayPattern.Enabled = false;
             this.button_Simulate.Enabled = false;
+            this.ToolStripMenuItem_Save.Enabled = false;
+        }
+
+        private void InitParams()
+        {
+            _data = new DataManager();
+            this._filePath = @"";
         }
 
         private void AddPayPattern()
@@ -38,6 +50,7 @@ namespace AccountBookSimu
                 _data.AddPayPattern(payPattern);
                 this.listBox_PayPattern.Items.Add(payPattern.RequiredPayPattern.Name);
                 this.button_Simulate.Enabled = true;
+                this.ToolStripMenuItem_Save.Enabled = true;
             }
         }
 
@@ -45,6 +58,7 @@ namespace AccountBookSimu
         {
             int iPattern = this.listBox_PayPattern.SelectedIndex;
             this.listBox_PayPattern.Items.RemoveAt(iPattern);
+            this.ToolStripMenuItem_Save.Enabled = true;
             _data.RemovePayPattern(iPattern);
 
             if (this.listBox_PayPattern.Items.Count == 0)
@@ -74,18 +88,14 @@ namespace AccountBookSimu
                 PayPattern payPattern = makePayPatternDialog.payPattern;
                 _data.EditPayPattern(this.listBox_PayPattern.SelectedIndex, payPattern);
                 this.listBox_PayPattern.Items[this.listBox_PayPattern.SelectedIndex] = payPattern.RequiredPayPattern.Name;
+                this.ToolStripMenuItem_Save.Enabled = true;
             }
         }
 
         private void NewFile()
         {
-            this.listBox_PayPattern.Items.Clear();
-            _data = new DataManager();
-            this.dateTimePicker_From.Value = DateTime.Today;
-            this.dateTimePicker_To.Value = DateTime.Today;
-            this.button_RemovePayPattern.Enabled = false;
-            this.button_EditPayPattern.Enabled = false;
-            this.button_Simulate.Enabled = false;
+            this.InitParams();
+            this.InitControls();
         }
 
         private void Open()
@@ -96,8 +106,25 @@ namespace AccountBookSimu
             ofd.RestoreDirectory = true;
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                _data.OpenSettingFile(ofd.FileName);
-                this.InitControls();
+                try
+                {
+                    _data.OpenSettingFile(ofd.FileName);
+                }
+                catch (FileFormatException)
+                {
+                    MessageBox.Show(
+                        "対応していないファイル形式です。",
+                        "不正なファイル形式です。",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error,
+                        MessageBoxDefaultButton.Button1
+                        );
+                    this.InitParams();
+                    this.InitControls();
+                    return;
+                }
+
+                _filePath = ofd.FileName;
                 for (int i = 0; i < _data.NPayPattern; i++)
                 {
                     PayPattern pp = _data.GetPayPattern(i);
@@ -106,14 +133,53 @@ namespace AccountBookSimu
                     this.dateTimePicker_To.Value = _data.SimulateTo;
                 }
                 this.button_Simulate.Enabled = true;
+                this.ToolStripMenuItem_Save.Enabled = false;
             }
+        }
+
+        private void Save()
+        {
+            if (string.IsNullOrEmpty(_filePath) == true)
+            {
+                throw new InvalidOperationException("Save()");
+            }
+
+            if (this.dateTimePicker_From.Value > this.dateTimePicker_To.Value)
+            {
+                MessageBox.Show(
+                    "期間の指定が不正です。シミュレーションの開始時期は終了時期以前に設定してください。",
+                    "期間の指定が不正です。",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1
+                    );
+                this.dateTimePicker_From.Focus();
+                return;
+            }
+
+            _data.SetTerm(this.dateTimePicker_From.Value, this.dateTimePicker_To.Value);
+            _data.ListedPayPatternNames = new List<string>();
+            foreach (string s in this.listBox_PayPattern.Items)
+            {
+                _data.ListedPayPatternNames.Add(s);
+            }
+
+            _data.SaveSettingFile(_filePath);
+
+            this.ToolStripMenuItem_Save.Enabled = false;
         }
 
         private void SaveAs()
         {
             if (this.dateTimePicker_From.Value > this.dateTimePicker_To.Value)
             {
-                MessageBox.Show("期間の指定が不正です。シミュレーションの開始時期は終了時期以前に設定してください。");
+                MessageBox.Show(
+                    "期間の指定が不正です。シミュレーションの開始時期は終了時期以前に設定してください。",
+                    "期間の指定が不正です。",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1
+                    );
                 this.dateTimePicker_From.Focus();
                 return;
             }
@@ -133,14 +199,21 @@ namespace AccountBookSimu
                 }
 
                 _data.SaveSettingFile(sfd.FileName);
+                this.ToolStripMenuItem_Save.Enabled = false;
             }
         }
 
         private void Simulate()
         {
-            if (this.dateTimePicker_From.Value > this.dateTimePicker_To.Value.AddDays(1))
+            if (this.dateTimePicker_From.Value > this.dateTimePicker_To.Value)
             {
-                MessageBox.Show("期間の指定が不正です。シミュレーションの開始時期は終了時期以前に設定してください。");
+                MessageBox.Show(
+                    "期間の指定が不正です。シミュレーションの開始時期は終了時期以前に設定してください。",
+                    "期間の指定が不正です。",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1
+                    );
                 this.dateTimePicker_From.Focus();
                 return;
             }
@@ -196,7 +269,15 @@ namespace AccountBookSimu
 
         private void ToolStripMenuItem_Save_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            // ファイルがまだ保存されていない場合。
+            if (_filePath == "")
+            {
+                this.SaveAs();
+            }
+            else
+            {
+                this.Save();
+            }
         }
 
         private void ToolStripMenuItem_SaveAs_Click(object sender, EventArgs e)
@@ -256,6 +337,16 @@ namespace AccountBookSimu
         private void ToolStripMenuItem_NewFile_Click(object sender, EventArgs e)
         {
             this.NewFile();
+        }
+
+        private void dateTimePicker_From_ValueChanged(object sender, EventArgs e)
+        {
+            this.ToolStripMenuItem_Save.Enabled = true;
+        }
+
+        private void dateTimePicker_To_ValueChanged(object sender, EventArgs e)
+        {
+            this.ToolStripMenuItem_Save.Enabled = true;
         }
     }
 }

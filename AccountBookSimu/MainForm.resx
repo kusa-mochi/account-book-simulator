@@ -411,6 +411,36 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 33</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ファイルFToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 29</value>
+  </data>
+  <data name="ファイルFToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル(&amp;F)</value>
+  </data>
   <data name="ToolStripMenuItem_NewFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>300, 30</value>
   </data>
@@ -444,11 +474,11 @@
   <data name="ToolStripMenuItem_Quit.Text" xml:space="preserve">
     <value>終了(&amp;X)</value>
   </data>
-  <data name="ファイルFToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 29</value>
+  <data name="編集ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 29</value>
   </data>
-  <data name="ファイルFToolStripMenuItem.Text" xml:space="preserve">
-    <value>ファイル(&amp;F)</value>
+  <data name="編集ToolStripMenuItem.Text" xml:space="preserve">
+    <value>編集(&amp;E)</value>
   </data>
   <data name="ToolStripMenuItem_AddPattern.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 30</value>
@@ -474,11 +504,11 @@
   <data name="ToolStripMenuItem_EditPattern.Text" xml:space="preserve">
     <value>収支パターン編集(&amp;E)</value>
   </data>
-  <data name="編集ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 29</value>
+  <data name="実行DToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 29</value>
   </data>
-  <data name="編集ToolStripMenuItem.Text" xml:space="preserve">
-    <value>編集(&amp;E)</value>
+  <data name="実行DToolStripMenuItem.Text" xml:space="preserve">
+    <value>実行(&amp;D)</value>
   </data>
   <data name="ToolStripMenuItem_Simulate.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -488,36 +518,6 @@
   </data>
   <data name="ToolStripMenuItem_Simulate.Text" xml:space="preserve">
     <value>シミュる(&amp;S)</value>
-  </data>
-  <data name="実行DToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 29</value>
-  </data>
-  <data name="実行DToolStripMenuItem.Text" xml:space="preserve">
-    <value>実行(&amp;D)</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 33</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>11</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -535,6 +535,12 @@
     <value>ファイルFToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;ファイルFToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_NewFile.Name" xml:space="preserve">
+    <value>ToolStripMenuItem_NewFile</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem_NewFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ToolStripMenuItem_FileOpen.Name" xml:space="preserve">
@@ -601,12 +607,6 @@
     <value>ToolStripMenuItem_Simulate</value>
   </data>
   <data name="&gt;&gt;ToolStripMenuItem_Simulate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ToolStripMenuItem_NewFile.Name" xml:space="preserve">
-    <value>ToolStripMenuItem_NewFile</value>
-  </data>
-  <data name="&gt;&gt;ToolStripMenuItem_NewFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

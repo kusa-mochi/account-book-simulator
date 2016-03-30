@@ -50,7 +50,14 @@ namespace AccountBookSimu
                 (string.IsNullOrWhiteSpace(this.textBox_Name.Text))
                 )
             {
-                MessageBox.Show("\"表示名\"欄にこの収支パターンの名前を記入してください。");
+                MessageBox.Show(
+                    "\"表示名\"欄にこの収支パターンの名前を記入してください。",
+                    "無効な表示名です。",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1
+                    );
+                this.textBox_Name.Focus();
                 return false;
             }
 

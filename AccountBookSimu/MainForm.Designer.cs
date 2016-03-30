@@ -42,6 +42,7 @@
             this.button_SaveSetting = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ファイルFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_NewFile = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_FileOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Save = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_SaveAs = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +54,6 @@
             this.ToolStripMenuItem_EditPattern = new System.Windows.Forms.ToolStripMenuItem();
             this.実行DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Simulate = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_NewFile = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,11 +68,13 @@
             // 
             resources.ApplyResources(this.dateTimePicker_From, "dateTimePicker_From");
             this.dateTimePicker_From.Name = "dateTimePicker_From";
+            this.dateTimePicker_From.ValueChanged += new System.EventHandler(this.dateTimePicker_From_ValueChanged);
             // 
             // dateTimePicker_To
             // 
             resources.ApplyResources(this.dateTimePicker_To, "dateTimePicker_To");
             this.dateTimePicker_To.Name = "dateTimePicker_To";
+            this.dateTimePicker_To.ValueChanged += new System.EventHandler(this.dateTimePicker_To_ValueChanged);
             // 
             // button_AddPayPattern
             // 
@@ -149,6 +151,12 @@
             this.ファイルFToolStripMenuItem.Name = "ファイルFToolStripMenuItem";
             resources.ApplyResources(this.ファイルFToolStripMenuItem, "ファイルFToolStripMenuItem");
             // 
+            // ToolStripMenuItem_NewFile
+            // 
+            this.ToolStripMenuItem_NewFile.Name = "ToolStripMenuItem_NewFile";
+            resources.ApplyResources(this.ToolStripMenuItem_NewFile, "ToolStripMenuItem_NewFile");
+            this.ToolStripMenuItem_NewFile.Click += new System.EventHandler(this.ToolStripMenuItem_NewFile_Click);
+            // 
             // ToolStripMenuItem_FileOpen
             // 
             this.ToolStripMenuItem_FileOpen.Name = "ToolStripMenuItem_FileOpen";
@@ -217,12 +225,6 @@
             resources.ApplyResources(this.ToolStripMenuItem_Simulate, "ToolStripMenuItem_Simulate");
             this.ToolStripMenuItem_Simulate.Name = "ToolStripMenuItem_Simulate";
             this.ToolStripMenuItem_Simulate.Click += new System.EventHandler(this.ToolStripMenuItem_Simulate_Click);
-            // 
-            // ToolStripMenuItem_NewFile
-            // 
-            this.ToolStripMenuItem_NewFile.Name = "ToolStripMenuItem_NewFile";
-            resources.ApplyResources(this.ToolStripMenuItem_NewFile, "ToolStripMenuItem_NewFile");
-            this.ToolStripMenuItem_NewFile.Click += new System.EventHandler(this.ToolStripMenuItem_NewFile_Click);
             // 
             // MainForm
             // 
